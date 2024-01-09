@@ -1,0 +1,66 @@
+/* Reset some default styles for consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+#ticket-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.ticketPageTitle {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.ticket-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section-container {
+    width: 48%; /* Adjust the width as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Style for ticket details */
+#ticket-container p {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Add some spacing for better readability */
+#ticket-container .section-container:not(:last-child) {
+    margin-right: 2%;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .section-container {
+        width: 100%;
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,130 @@
+body {
+  background: #6D2121;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.login-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  color: #6D2121;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.password-input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #6D2121;
+}
+
+.password-toggle i {
+  font-size: 20px;
+}
+
+.form-group button {
+  background-color: #6D2121;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: calc(100% - 20px);
+}
+
+.form-group button:hover {
+  background-color: #8A2BE2;
+}
+
+.register-link {
+  color: #6D2121;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+}
+
+.register-link:hover {
+  color: #8A2BE2;
+}
+
+@media screen and (max-width: 600px) {
+  .login-container {
+      width: 90%;
+  }
+}
+
+.btn{
+  height: 35px;
+  background: rgba(76,68,182,0.808);
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .3s;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+.btn:hover{
+  opacity: 0.82;
+}
+
+.message{
+  text-align: center;
+  background: #f9eded;
+  padding: 15px 0px;
+  border:1px solid #6D2121;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: black;
+}

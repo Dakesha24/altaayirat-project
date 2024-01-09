@@ -1,0 +1,93 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f2f2f2;
+}
+
+#pesan-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pesanPageTitle {
+  text-align: center;
+  color: #333;
+}
+
+.pesan-content {
+  margin-top: 20px;
+}
+
+/* Bagian Data Pribadi */
+.section-container {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.personForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.label-container {
+  margin-bottom: 15px;
+}
+
+.inputan {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.gender-buttons {
+  display: flex;
+}
+
+.gender-buttons-laki-laki,
+.gender-buttons-perempuan {
+  margin-right: 15px;
+}
+
+/* Bagian Memilih Kursi */
+.seat-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seat-list li {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+/* Bagian Total Bayar */
+.submitBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submitBtn:hover {
+  background-color: #45a049;
+}

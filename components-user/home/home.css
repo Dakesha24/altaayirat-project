@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #A7672D;
+}
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+nav:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 24px;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: yellow;
+}
+
+.nav-links a:active {
+  opacity: 0.5;
+}
+
+.content {
+  padding: 80px 20px 20px;
+  text-align: center;
+  margin-top: 60px; /* Menyesuaikan dengan tinggi navbar */
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content {
+  flex: 1;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.right-content {
+  flex: 1;
+}
+
+.right-content img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.login-button {
+  margin-right: 40px;
+}
+.login-button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.login-button a:hover {
+  background-color: yellow;
+  color: #000;
+  border: none;
+  opacity: 0.8;
+}
+
+.login-button a:active {
+  opacity: 0.5;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-links a {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .left-content, .right-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .left-content a.pesan-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: white;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.left-content a.pesan-button:hover {
+    background-color: #1c7a8c;
+}
+
+.left-content a.pesan-button:active {
+    opacity: 0.8;
+}
+
+}
